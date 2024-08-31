@@ -32,6 +32,16 @@ Route::middleware(['auth'])->group(function () {
             })->name('dashboard.sales');
         });
 
+        Route::prefix('dashboard/')->group(function () {
+            Route::get('ecommerce', function () {
+                return view('index');
+            })->name('dashboard.ecommerce');
+
+            Route::get('sales', function () {
+                return view('dashboard-sales');
+            })->name('dashboard.sales');
+        });
+
         Route::get('calendar', function () {
             return view('apps-calendar');
         })->name('calendar.index');
@@ -107,7 +117,7 @@ Route::middleware(['auth'])->group(function () {
 
     Route::prefix('email/')->group(function () {
         Route::get('', [App\Http\Controllers\HomeController::class, 'emailIndex'])->name('email.inbox');
-        // Route::get('read', [App\Http\Controllers\HomeController::class, 'emailRead'])->name('email.read');
+        Route::get('read', [App\Http\Controllers\HomeController::class, 'emailRead'])->name('email.read');
     });
 
     Route::get('/file-manager', [App\Http\Controllers\HomeController::class, 'fileManager'])->name('filemanager');
