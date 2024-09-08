@@ -800,5 +800,5 @@
         <!-- email editor init -->
         <script src="{{ URL::asset('build/js/pages/email-editor.init.js') }}"></script>
         <!-- App js -->
-        <script src="{{ URL::asset('build/js/app.js') }}"></script>
+        <script src="{{ URL::asset('public/build/js/app.js') }}"></script>
     @endsection
