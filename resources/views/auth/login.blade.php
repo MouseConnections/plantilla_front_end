@@ -33,7 +33,7 @@
                                         <p class="text-muted">Sign in to continue to webadmin.</p>
                                     </div>
                                     <div class="p-2 mt-4">
-                                        <form method="POST" action="{{ route('login') }}" class="auth-input">
+                                        <form method="POST" action="{{ route('login') }}" class="auth-input" autocomplete="off">
                                             @csrf
                                             <div class="mb-2">
                                                 <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
@@ -59,7 +59,7 @@
                                                     <input type="password"
                                                         class="form-control @error('password') is-invalid @enderror"
                                                         placeholder="Enter password" id="password-input" name="password"
-                                                        required autocomplete="current-password" value="12345678">
+                                                        required autocomplete="current-password">
                                                     <button type="button"
                                                         class="btn btn-link position-absolute h-100 end-0 top-0"
                                                         id="password-addon">
