@@ -37,18 +37,18 @@ class HomeController extends Controller
     public function fileManager(Request $request)
     {
         // dd('apps-file-manager.blade');
-        return view('apps-file-manager');
+        return view('file_manager.app');
     }
 
     public function emailIndex(Request $request)
     {
         // dd('apps-file-manager.blade');
-        return view('email-inbox');
+        return view('email.inbox');
     }
 
     public function emailRead(Request $request)
     {
         // dd('apps-file-manager.blade');
-        return view('email-read');
+        return view('email.read');
     }
 }
