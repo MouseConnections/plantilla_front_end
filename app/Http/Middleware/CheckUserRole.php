@@ -17,6 +17,7 @@ class CheckUserRole
      */
     public function handle(Request $request, Closure $next, String $module)
     {
+        // dd(auth()->user()->rol->rol_module_acces);
         if ($module == "") {
             $module = $request->route('module');
         }
@@ -25,12 +26,12 @@ class CheckUserRole
             return redirect()->route('index');
         } else {
             foreach (auth()->user()->rol->rol_module_acces as $access) {
-
                 if ($access->module->prefix == $module && !$access->status && $access->permission->name == 'read') {
                     return redirect()->route('index');
                 }
             }
-            if (auth()->user()->rol->rol_module_acces->empty()) {
+
+            if (auth()->user()->rol->rol_module_acces->isEmpty()) {
                 return redirect()->route('index');
             }
         }
