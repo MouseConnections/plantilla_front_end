@@ -3,7 +3,7 @@
 
     <!-- LOGO -->
     <div class="navbar-brand-box">
-        <a href="{{ route('dashboard.ecommerce') }}" class="logo logo-dark">
+        <a href="{{ route('index') }}" class="logo logo-dark">
             <span class="logo-sm">
                 <img src="{{ URL::asset('build/images/logo-dark-sm.png') }}" alt="" height="26">
             </span>
@@ -37,9 +37,6 @@
                 @endphp
                 @if (isset($menus))
                     @if (!empty($menus))
-                        @php
-                            $items_without_menu = $menus['Sin_menu'];
-                        @endphp
                         @foreach ($menus as $key => $access)
                             @if ($key != 'Sin_menu')
                                 <li>
@@ -58,6 +55,10 @@
                                 </li>
                             @endif
                         @endforeach
+                        @if (array_key_exists('Sin_menu', $menus))
+                        @php
+                            $items_without_menu = $menus['Sin_menu'];
+                        @endphp
                         @foreach ($items_without_menu['submenus'] as $key => $access)
                             <li>
                                 <a href="{{ route($access['prefix_module']) }}">
@@ -67,6 +68,7 @@
                                 </a>
                             </li>
                         @endforeach
+                        @endif
                     @endif
 
                 @endif

@@ -638,8 +638,9 @@
         <!-- end row -->
 
 
-        <div class="row">
-
+        {{-- EXTRA CARDS --}}
+        {{-- <div class="row">
+            WEEKLY HOURS
             <div class="col-xl-4">
                 <div class="card">
                     <div class="card-header">
@@ -651,6 +652,7 @@
                 </div>
             </div>
 
+            TEAM MEMBERS
             <div class="col-xl-4">
                 <div class="card">
                     <div class="card-header">
@@ -775,6 +777,7 @@
                 </div>
             </div>
 
+            SKILLS
             <div class="col-xl-4">
                 <div class="card">
                     <div class="card-header">
@@ -884,7 +887,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     @endsection
     @section('scripts')
         <!-- apexcharts -->
