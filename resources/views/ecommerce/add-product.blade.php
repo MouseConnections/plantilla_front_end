@@ -120,7 +120,8 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    {{-- PRODUCT IMAGE --}}
+                    {{-- <div class="card">
                         <a href="#addproduct-img-collapse" class="text-body collbodyd" data-bs-toggle="collapse"
                             aria-haspopup="true" aria-expanded="false" aria-haspopup="true"
                             aria-controls="addproduct-img-collapse">
@@ -163,9 +164,10 @@
                                 </form>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
-                    <div class="card">
+                    {{-- META DATA --}}
+                    {{-- <div class="card">
                         <a href="#addproduct-metadata-collapse" class="text-body collbodyd" data-bs-toggle="collapse"
                             aria-haspopup="true" aria-expanded="false" aria-haspopup="true"
                             aria-controls="addproduct-metadata-collapse">
@@ -221,7 +223,7 @@
                                 </form>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

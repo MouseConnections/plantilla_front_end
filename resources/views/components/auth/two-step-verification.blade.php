@@ -97,20 +97,6 @@
 
                         </div><!-- end col -->
                     </div><!-- end row -->
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center p-4">
-                                <p>©
-                                    <script>
-                                        document.write(new Date().getFullYear())
-                                    </script> webadmin. Crafted with <i
-                                        class="mdi mdi-heart text-danger"></i> by Themesdesign
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div><!-- end container -->
         </div>

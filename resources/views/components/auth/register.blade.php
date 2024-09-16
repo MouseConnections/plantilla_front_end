@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="card">
-                            <div class="card-body p-4"> 
+                            <div class="card-body p-4">
                                 <div class="text-center mt-2">
                                     <h5>Register Account</h5>
                                     <p class="text-muted">Get your free webadmin account now.</p>
@@ -37,11 +37,11 @@
                                         <div class="mb-3">
                                             <label class="form-label" for="useremail">Email</label>
                                             <div class="position-relative input-custom-icon">
-                                                <input type="email" class="form-control" id="useremail" placeholder="Enter email">  
+                                                <input type="email" class="form-control" id="useremail" placeholder="Enter email">
                                                 <span class="bx bx-mail-send"></span>
-                                            </div>     
+                                            </div>
                                         </div>
-        
+
                                         <div class="mb-3">
                                             <label class="form-label" for="username">Username</label>
                                             <div class="position-relative input-custom-icon">
@@ -49,7 +49,7 @@
                                                  <span class="bx bx-user"></span>
                                             </div>
                                         </div>
-                
+
                                         <div class="mb-3">
                                             <label class="form-label" for="userpassword">Password</label>
                                             <div class="position-relative auth-pass-inputgroup input-custom-icon">
@@ -62,7 +62,7 @@
                                             <input type="checkbox" class="form-check-input" id="auth-terms-condition-check">
                                             <label class="form-check-label" for="auth-terms-condition-check">I accept <a href="javascript: void(0);" class="text-body">Terms and Conditions</a></label>
                                         </div>
-                                        
+
                                         <div class="mt-3">
                                             <button class="btn btn-primary w-100 waves-effect waves-light" type="submit">Register</button>
                                         </div>
@@ -71,7 +71,7 @@
                                             <div class="signin-other-title">
                                                 <h5 class="font-size-14 mb-3 mt-2 title"> Sign in with </h5>
                                             </div>
-            
+
                                             <ul class="list-inline mt-2">
                                                 <li class="list-inline-item">
                                                     <a href="javascript:void()" class="social-list-item bg-primary text-white border-primary">
@@ -96,21 +96,12 @@
                                         </div>
                                     </form>
                                 </div>
-            
+
                             </div>
                         </div>
 
                     </div><!-- end col -->
                 </div><!-- end row -->
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="text-center p-4">
-                            <p>© <script>document.write(new Date().getFullYear())</script> webadmin. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesdesign</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div><!-- end container -->
     </div>
